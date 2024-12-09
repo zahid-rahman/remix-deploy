@@ -1,0 +1,13 @@
+version: "3.8" # this the version of Docker Compose
+services:
+  app:
+    container_name: remix_app
+    build:
+      context: ./ 
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '5173:5173'
+    volumes:
+      - ./:/app
+      - /app/node_modules
