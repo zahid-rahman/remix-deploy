@@ -48,7 +48,7 @@ export default function Index() {
                   <div>
                     <h3 className="text-gray-800 font-medium">{post.title}</h3>
                     <p className="text-gray-500 text-sm mt-3">{post.body}</p>
-                    <Link className="bg-purple-600 text-sm px-2 py-1 text-white rounded-md"  to={`/posts/details/${post.id}`}>view link</Link>
+                    <Link className="bg-purple-700 text-sm px-2 py-1 text-white rounded-md"  to={`/posts/details/${post.id}`}>view link</Link>
                   </div>
                 </li>
               );
